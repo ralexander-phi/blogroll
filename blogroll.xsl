@@ -12,6 +12,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title><xsl:value-of select="head/title" /></title>
     <link rel="stylesheet" href="blogroll.css" />
+    <link rel="stylesheet" href="https://s3.amazonaws.com/scripting.com/code/fontawesome/css/all.css" />
     <!-- Override some style elements -->
     <style>
 .divBlogrollContainer, #idBlogrollContainer {
@@ -93,7 +94,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   </td>
   <td class="tdBlogrollFeedTitle">
     <a href="{@xmlUrl}">
-    <span class="spTimeContainer"><span class="spWhenUpdated"> &#128225;</span></span>
+    <span class="spTimeContainer"><span class="spWhenUpdated">
+      <i class="fa fa-rss"></i>
+    </span></span>
     </a>
     <a href="https://feedland.com/?feedurl={@xmlUrl}">
     <span class="spTitleString" data-container=".divBlogrollContainer" data-toggle="tooltip" data-placement="right" data-original-title="" title="">
